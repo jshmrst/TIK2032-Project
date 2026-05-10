@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Portfolio Joshua</title>
+    <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
@@ -25,9 +26,11 @@
         
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="project 4.jpg" alt="Project 1" height="150" width="130"
-              
-                   </div>
+                <img src="project 4.jpg" alt="Project 1" height="150" width="130">
+                <div class="overlay">
+                    <div class="overlay-content">
+                    </div>
+                </div>
             </div>
             
             <div class="gallery-item">
@@ -65,7 +68,15 @@
     </div>
     
     <footer>
-        <p>&copy; 2025 Portfolio Joshua | All Rights Reserved</p>
+        <p>&copy; <span class="current-year"></span> Portfolio Joshua | All Rights Reserved</p>
     </footer>
+
+    <div id="galleryModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="galleryModalImage">
+        <div class="modal-caption" id="galleryCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
