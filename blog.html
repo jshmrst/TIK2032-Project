@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Portfolio Joshua</title>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
@@ -26,7 +27,7 @@
             <div class="blog-posts">
                 <article class="blog-post">
                     <h2>Pemerintah kabupaten Minahasa Selatan</h2>
-                    <img src="blog 1.png" alt="img" width = "120" height = "130">
+                    <img src="blog 1.png" alt="img" width="120" height="130" class="blog-image">
                     <div class="excerpt">
                         <p>Kabupaten Minahasa Selatan dibentuk berdasarkan Undang-Undang Nomor 10 Tahun 2003, yang disahkan oleh DPR RI pada 4 Agustus 2003. Ibukota kabupaten ini adalah Kota Amurang, berjarak sekitar 64 km dari Manado.</p>    
                         <p>Sejak tahun 2007, Kabupaten Minahasa Selatan terdiri dari 17 kecamatan dan 170 kelurahan. Perekonomian daerah ini menunjukkan fluktuasi dalam Produk Domestik Regional Bruto (PDRB), dengan pentingnya investasi dan sumber daya manusia dalam pertumbuhan ekonomi.</p>
@@ -36,8 +37,7 @@
                 
                 <article class="blog-post">
                     <h2>Sheila On 7</h2>
-                    <img src="blog 2.png" alt="Responsive Design" height="
-                    130" width="120">
+                    <img src="blog 2.png" alt="Responsive Design" height="130" width="120" class="blog-image">
                     <div class="excerpt">
                         <p>Sheila on 7, band rock alternatif Yogyakarta, terbentuk 6 Mei 1996. Anggota kini: Duta, Eross, Adam. Formasi awal: Duta, Eross, Adam, Sakti, Anton, dengan Eross sebagai pencipta lagu utama. Terjadi perubahan anggota; Anton keluar (2004), Sakti (2006), Brian jadi drummer tetap selama 18 tahun lalu keluar (2022).</p>
                         <p>Nama "Sheila" dari teman SMA Eross, "On 7" berarti "pada 7 nada".</p>
@@ -47,8 +47,7 @@
                 
                 <article class="blog-post">
                     <h2>HyperText Markup Language (HTML)</h2>
-                    <img src="blog 3.png" alt="Responsive Design" height="
-                    130" width="120">
+                    <img src="blog 3.png" alt="Responsive Design" height="130" width="120" class="blog-image">
                     <div class="excerpt">
                         <p>HTML adalah  bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
                         <p>Pada 1980, Tim Berners-Lee di CERN mengembangkan ENQUIRE, sistem berbagi dokumen ilmuwan. Pada 1990, ia merancang HTML dan perangkat lunak jaringan. Dokumen pertama HTML, "Tanda HTML," dirilis 1991 dengan 18 elemen dasar berbasis SGML. HTML digunakan browser untuk menampilkan halaman web dan berkembang dengan CSS untuk meningkatkan tampilan. Berners-Lee juga menciptakan HTTP dan URL, membangun dasar World Wide Web yang bebas diakses semua orang.</p>
@@ -58,7 +57,16 @@
     </div>
     
     <footer>
-        <p>&copy; 2025 Portfolio Joshua | All Rights Reserved</p>
+        <p>&copy; <span class="current-year"></span> Portfolio Joshua | All Rights Reserved</p>
     </footer>
+
+    <!-- Modal for image viewing -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
