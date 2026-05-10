@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Portfolio Joshua</title>
+    <title>Joshua Portofolio</title>
     <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1>Portfolio <span>Joshua</span></h1>
+            <div class="brand-wrap">
+                <h1>Portofolio <span>Joshua</span></h1>
+                <div class="calendar-widget" id="calendarWidget"></div>
+            </div>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="gallery.html" class="active">Gallery</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="gallery.html">Gallery</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -21,62 +24,28 @@
     </header>
     
     <div class="container">
-        <h1 class="page-title">Gallery</h1>
-
+        <section id="showcase">
+            <h1>Selamat Datang di Portfolio Saya</h1>
+            <p>Joshua Marst Lintjewas (230211060015)</p>
+        </section>
         
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="project 4.jpg" alt="Project 1" height="150" width="130">
-                <div class="overlay">
-                    <div class="overlay-content">
-                    </div>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Halo! </p>
+                    <p>Saya adalah seorang mahasiswa Teknik Informatika di Universitas Sam Ratulangi</p>
+                    <p></p>
+                </div>
+                <div class="about-image">
+                    
                 </div>
             </div>
-            
-            <div class="gallery-item">
-                <img src="project 5.jpg" alt="Project 2" height="150" width="130">
-                <div class="overlay">
-                    <div class="overlay-content">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="project 3.jpg" alt="Project 3" height="150" width="130">
-                <div class="overlay">
-                    <div class="overlay-content">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="project 2.png" alt="Project 4" height="150" width="140">  
-                <div class="overlay">
-                    <div class="overlay-content">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="project 1.png" alt="Project 5" height="120" width="130">  
-                <div class="overlay">
-                    <div class="overlay-content">
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-    
     <footer>
         <p>&copy; <span class="current-year"></span> Portfolio Joshua | All Rights Reserved</p>
     </footer>
-
-    <div id="galleryModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="galleryModalImage">
-        <div class="modal-caption" id="galleryCaption"></div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
